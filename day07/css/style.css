@@ -1,0 +1,70 @@
+@charset "utf-8";
+/*create by 2017-3-16*/
+/* p 标签选择器 可以选择当前文件中所有的p标签 */
+/* 重置样式 */
+body,h1,ul {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+}
+h1 {
+	color:blue;
+	background-color: green;
+}
+p {
+	color: red;
+}
+table {
+	width: 500px;
+	border-collapse: collapse;
+	/*边框合并 一般用于table元素*/
+}
+tr {
+	/*background-color: pink;*/
+}
+td {
+	border-width:  1px;
+	border-style: solid;
+	border-color: #ccc;
+}
+
+/* 类选择器 */
+.low {
+	background-color: pink;
+}
+.tbl_header {
+	background-color: #ddd;
+	text-align: center;
+}
+/* id选择器 */
+#nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;/*内边距*/
+	/*行级布局，列级布局*/
+	overflow: hidden;/*清除子元素浮动对父于元素的影响*/
+}
+/* 关联选择器（后代选择器） */
+#nav > li {/*直接孩子 并且孩子为li 子代选择器*/
+	float: left;
+	padding: 5px 10px;
+}
+#nav > li {/*直接孩子 并且孩子为li 子代选择器*/
+	
+}
+li:hover {
+	background-color: pink;
+}
+/* 选中next 后代选择器*/
+.nest li {
+	border: 1px solid;
+}
+/* 并且关系 */
+form.oneForm >div.userDiv >label>*{
+	background-color: #ddd;
+}
+/* 子代选择器 */
+/*组合选择器 使用‘，’号隔开*/
+/* 伪类 */

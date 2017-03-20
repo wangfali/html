@@ -1,0 +1,11 @@
+1.安装浏览器
+	ie\ietest\firefox(火狐浏览器)+firebug(插件)\google chrome\opera\safari(ios)
+2.自己学一个网页
+3.路径href 相对路径  不以“\”开头则表示相对当前目录  mailto:邮件访问地址
+
+、绝对路径 http://www.  \以“\”开始的是服务器的根目录 
+4、超链接  锚点
+5、写一个网页介绍课程表 不能使用任何的css、只能使用html
+6、自己申请一个公众号
+7、将每天写的也页面上传到githup中
+8、将自己的课表使用html编码

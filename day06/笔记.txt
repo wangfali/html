@@ -1,0 +1,26 @@
+<meta name="" content="">
+body
+标签
+<div 属性>文本</div>：元素
+<div>标签 
+属性：属性名与属性值通过“=”号分隔，属性与属性之间通过空格分  	隔，属性的大小写不敏感
+	核心属性：id,class,title,style
+	特殊属性：
+标签嵌套：
+标签（元素）分类：语义化标签(会自带样式)/无意义标签（没有任何标签）：span,div;
+	块级元素（独占一行空间，可以指定宽高）：
+	行内（共享一行空间，不可以指定宽高）：
+标签学习：h1~h6,ul li,ol li,dl dt dd(定义列表),表格:<table><caption><thead>(tr th) <tfoot>(tr td)<tbody>(tr td)，
+表单：<form action="" mehtod=""><label for="为谁加的">(标签)
+		</label>:主要用于与其他标签的绑定
+		input type:(text,file,password,image,reset,submit)
+	</form>
+图片：<img src="" alt="">
+超路径:<a href=""> 相对路径：
+					绝对路径（远程）：
+段落：p(块级标签)
+css是什么：一系列的属性和选择器 h1{color:red; border:1px solid gray;}
+css如何应用到html中:
+	内部
+	外部引入
+	行内样式
