@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>white-space 设置或检索对象内空格的处理方式</title>
+	<style type="text/css">
+		li.normal >p {
+			color: red;
+			 white-space: normal;/*正常 */
+		}
+		li.pre >p {
+			border: 3px;
+			white-space: pre;/*等宽字体显示预先格式化的文本，字间的空白距离，当文不合并文字超出边界时不换行*/
+		}
+		li.pre-wrap >p {
+			white-space: pre-wrap;/*强制在同一行内显示所有文本，合并文本间的多余空白，直到文本结束或者遭遇br对象。 
+**/
+		}
+		li.pre-line >p {
+			white-space: pre-line;
+			/*用等宽字体显示预先格式化的文本，不合并文字间的空白距离，当文字碰到边界时发生换行*/
+		}
+		li.nowarp > p {
+			white-space: nowarp;
+		}
+	</style>
+</head>
+<body>
+<ul class="test">
+	<li class="normal">
+		<strong>normal：</strong>
+		<p>轻轻地我走了
+	正如我轻轻地来</p>
+	</li>
+	<li class="pre">
+		<strong>pre：</strong>
+		<p>轻轻地我走了（这里接很多测试文字）
+	正如我轻轻地来</p>
+	</li>
+	<li class="pre-wrap">
+		<strong>pre-wrap：</strong>
+		<p>轻轻地    我走了（这里接很多测试文字）
+	正如我轻轻地来</p>
+	</li>
+	<li class="pre-line">
+		<strong>pre-line</strong>
+		<p>轻轻地    我走了（这里接很多测试文字）
+	正如我轻轻地来</p>
+	</li>
+	<li class="nowrap">
+		<strong>nowrap：</strong>
+		<p>轻轻地我走了轻轻地我走了
+	正如我     轻轻地来轻轻地我走了
+	正如我     轻轻地来轻轻地我走了
+	正如我     轻轻地来轻轻地我走了
+	正如我     轻轻地来轻轻地我走了
+	正如我     轻轻地来轻轻地我走了
+	正如我     轻轻地来轻轻地我走了
+	正如我     轻轻地来
+	正如我     轻轻地来</p>
+	</li>
+</ul>
+
+</body>
+</html>

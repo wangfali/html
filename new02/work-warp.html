@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>work -wrap 内容超过指定容器的边界时是否断行</title>
+	<style type="text/css">
+		body{
+			margin: 0;border: 0;
+		}
+		div.one {
+		width: 400px;height: 300px;border: 1px;border-color: #1BDD69;
+		background-color: #D65858;}
+		p.two {
+			/* word-wrap: normal; 允许内容顶开或溢出指定的容器边界。*/
+			word-wrap: break-word;
+		}
+	</style>
+</head>
+<body>
+	<div class="one">
+		<p class="two">
+			wdafsdfsdjvjsvdsfjsdjnvsdvs
+			wdafsdfsdjvjsvdsfjsdjnvsdvs
+			wdafsdfsdjvjsvdsfjsdjnvsdvswdafsdfsdjvjsvdsfjsdjnvsdvswdafsdfsdjvjsvdsfjsdjnvsdvswdafsdfsdjvjsvdsfjsdjnvsdvswdafsdfsdjvjsvdsfjsdjnvsdvswdafsdfsdjvjsvdsfjsdjnvsdvswdafsdfsdjvjsvdsfjsdjnvsdvswdafsdfsdjvjsvdsfjsdjnvsdvs
+			wdafsdfsdjvjsvdsfjsdjnvsdvs
+			wdafsdfsdjvjsvdsfjsdjnvsdvs
+			wdafsdfsdjvjsvdsfjsdjnvsdvs
+			wdafsdfsdjvjsvdsfjsdjnvsdvs
+		</p>
+	</div>
+</body>
+</html>

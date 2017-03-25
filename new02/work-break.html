@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>word-break 文本内的换行</title>
+	<style type="text/css">
+		p.one {
+			/* word-break: normal;依照亚洲语言和非亚洲语言的文本规则，允许在字内换行 */
+			/* word-break: break-all;对于中文，韩文，日文，不允许字断开 */
+		word-break: keep-all;
+		background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div style="width: 200px; border: 2px;border-color: red; margin: 2px; background-color: #9a9a9a">
+	<p class="one">wffhdfhdfhjdvjjbdjsddojoIOefwddcdjfdjbfddfkkdjfqkjded
+	sdewfbdbhdbfhbhdbfhdfefbdfhfefb</p>
+	</div>
+</body>
+</html>

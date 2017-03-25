@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>E[att|="val"] 如果元素E拥有att属性，并且值为val，或者值是以val-开头的，那么E将会被选择。</title>
+	<style type="text/css">
+		div[class|="at"] {
+			font-family: serif;
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="at-test">express</div>
+	<div class="spell">impress</div>
+	<div class="at">convey</div>
+</body>
+</html>

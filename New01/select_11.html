@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>属性选择器 E[att~="val"]</title>
+	<!-- 选择具有att属性且属性值为一用空格分隔的字词列表，其中一个等于val的E元素（包含只有一个值且该值等于val的情况）。   --> 
+	<style type="text/css">
+		div[class~="b"] {
+			font-size: 24em;
+		}
+	</style>
+</head>
+<body>
+	<div class="a">1</div>
+	<div class="b">2</div>
+	<div class="a b">3</div>
+</body>
+</html>
