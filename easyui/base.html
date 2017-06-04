@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>easyui入门</title>
+	
+  	<!-- 引入css文件，不限顺序 -->
+    <link rel="stylesheet" href="./themes/bootstrap/easyui.css" type="text/css"></link>
+    <link rel="stylesheet" href="./themes/icon.css" type="text/css"></link>
+  
+  	<!-- 引入js文件，有顺序限制 -->
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="./js/easyui-lang-zh_CN.js"></script>
+
+	<!-- 所有的css文件和的有的js文件位置不限 -->
+</head>
+<body>
+	<!-- 使用标签属性的方式来定义一个普通的面板
+
+	<div id="p" class="easyui-panel" title="My Panel"     
+	        style="width:500px;height:150px;padding:10px;background:#fafafa;"   
+	        data-options="iconCls:'icon-save',closable:true,    
+	                collapsible:true,minimizable:true,maximizable:true">   
+	    <p>这是我的第一个实例</p>     
+	</div>   -->
+	
+	 使用js的方式定义easyui的面板
+	 <div id="p" style="padding: 10px;">
+	 	<p>我的第一个实例</p>
+	 </div>
+	 <script type="text/javascript">
+	 	$("#p").panel({
+	 		width:500,
+	 		height:150,
+	 		title:'我的面板',
+	 		tools:[{
+	 			iconCls:'icon-add',
+	 			handler:function(){
+	 				alert('new');
+	 			}
+	 		},{
+	 			iconCls:'icon-save',
+	 			handler:function(){alert('save')}
+	 		}]
+	 	});
+	 	$("#p").panel('move',{
+	 			width:600,
+	 			height:400
+	 	});
+	 </script>
+<!--  面板的方法和事件还有很多请参考相应的文档进行使用   -->
+</body>
+</html>
